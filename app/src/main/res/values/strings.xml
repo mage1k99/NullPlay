@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Null play</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="e_mail_id">E-mail ID</string>
+    <string name="save">Save !</string>
+    <string name="fetch">Fetch !</string>
+    <string name="long_latin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam orci, malesuada ac est vitae, fringilla commodo tortor. Donec aliquet a libero accumsan bibendum. Nulla nulla tellus, porta at ultrices pharetra, placerat sed tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ornare sagittis turpis a posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis nec sollicitudin tortor. Mauris odio ligula, tincidunt ac sapien sit amet, rutrum ullamcorper nulla. Vestibulum pretium risus aliquam lorem egestas, ut varius tellus cursus. Suspendisse mollis eget dolor at eleifend. Pellentesque porttitor sed eros at consectetur. Sed efficitur enim purus, quis dignissim nisi vulputate sed. Nam sapien turpis, eleifend consequat enim sed, finibus luctus ipsum. Cras elementum libero eget libero molestie, sed facilisis neque varius. Morbi volutpat eu nibh eget ultricies. Proin vel gravida turpis, sit amet luctus diam.
+
+Duis finibus mauris vitae dui fermentum luctus et laoreet lacus. Aliquam et viverra mi, sed ornare dui. Curabitur tempus consequat lacus. Donec nec pulvinar sapien. Duis turpis leo, ullamcorper et aliquam id, condimentum nec sapien. Suspendisse ullamcorper eros vel sem tincidunt, non egestas ante pulvinar. Curabitur ac magna consectetur, consectetur magna et, sodales nulla. Sed fringilla tellus maximus, tempor nisi non, pharetra magna. Mauris elit nibh, bibendum a lobortis eget, volutpat sit amet eros. Aliquam consequat est eros, eget ullamcorper mi convallis ut. Nulla vehicula, justo et vehicula commodo, libero urna feugiat metus, et laoreet nunc sapien non massa. Duis faucibus interdum purus, ac mollis est lobortis sit amet. Nulla tincidunt tincidunt metus, dictum maximus tellus interdum eget.
+
+Duis ipsum nisl, pharetra ac aliquam et, molestie et eros. Mauris orci massa, imperdiet a risus eget, ornare fringilla augue. Aliquam at tincidunt velit. Sed semper ac lorem at venenatis. Pellentesque ligula quam, volutpat ut molestie nec, dapibus iaculis urna. Mauris dignissim orci ac tortor elementum tempus. Nullam vitae augue vulputate, accumsan erat quis, bibendum diam. Sed sagittis ac erat et consequat. Praesent id orci eu dui pretium feugiat quis elementum ipsum. Vestibulum consectetur ut magna eu feugiat. Nullam sit amet suscipit augue, id malesuada odio. Duis quis nunc quis nisl semper hendrerit sed et nisl. Pellentesque at fermentum nisl, sed vestibulum neque. In hac habitasse platea dictumst. Aliquam vitae aliquet metus</string>
+    <string name="collapsing_toolbar">Collapsing Toolbar</string>
+    <string name="custom_behavior">Custom Behavior</string>
+    <string name="title_activity_play">playActivity</string>
+    <string name="todo">TODO</string>
+    <string name="media_content">Media Content</string>
+</resources>
