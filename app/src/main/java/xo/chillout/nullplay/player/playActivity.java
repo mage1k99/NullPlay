@@ -25,7 +25,7 @@ ArrayList<Integer> songs = new ArrayList<>();
         super.onCreate(savedInstanceState);
         playBinding = DataBindingUtil.setContentView(this,R.layout.activity_play);
         Playsong(playBinding);
-        playBinding.playIcon1.setOnClickListener(new View.OnClickListener() {
+        playBinding.playlistIcon1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),playlistActivity.class);
@@ -69,14 +69,19 @@ ArrayList<Integer> songs = new ArrayList<>();
                 @Override
                 public void onClick(View view) {
                     player.pause();
-                    playNext(new Random().nextInt(songNameList.size()),songNameList,songs);
+                    int num = new Random().nextInt(songNameList.size());
+                    MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(),songs.get(num));
+                    mediaPlayer.start();
                 }
             });
             playBinding.previousButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     player.pause();
-                    playPrevious(new Random().nextInt(songNameList.size()),songNameList,songs);
+                    player.pause();
+                    int num = new Random().nextInt(songNameList.size());
+                    MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(),songs.get(num));
+                    mediaPlayer.start();
                 }
             });
         }
