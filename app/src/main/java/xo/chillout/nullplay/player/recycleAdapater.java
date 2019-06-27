@@ -38,7 +38,7 @@ recycleAdapater(ArrayList<String> songNames, Context context, ArrayList<Integer>
     }
 
     @Override
-    public void onBindViewHolder(@NonNull customviewholder holder, final int position) {
+    public void onBindViewHolder(@NonNull final customviewholder holder, final int position) {
         Log.d(TAG, "onBindViewHolder: Executed for "+position);
         holder.songname.setText(SongNames.get(position));
         holder.rootlayout.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +48,7 @@ recycleAdapater(ArrayList<String> songNames, Context context, ArrayList<Integer>
                 intent.putExtra("SongUrl",Songs.get(position));
                 intent.putExtra("SongName",SongNames.get(position));
                 context.startActivity(intent);
+
             }
         });
     }

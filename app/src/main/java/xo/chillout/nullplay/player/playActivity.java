@@ -12,6 +12,7 @@ import androidx.databinding.DataBindingUtil;
 import java.util.ArrayList;
 import java.util.Random;
 
+import xo.chillout.nullplay.MainActivity;
 import xo.chillout.nullplay.R;
 import xo.chillout.nullplay.databinding.ActivityPlayBinding;
 
@@ -28,7 +29,7 @@ ArrayList<Integer> songs = new ArrayList<>();
         playBinding.playlistIcon1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),playlistActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });

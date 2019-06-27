@@ -1,34 +1,42 @@
 package xo.chillout.nullplay;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.Fragment;
 
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigation;
-import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import xo.chillout.nullplay.databinding.ActivityMainBinding;
-import xo.chillout.nullplay.player.playlistActivity;
-import xo.chillout.nullplay.player.playActivity;
-
-import static android.os.SystemClock.sleep;
+import xo.chillout.nullplay.player.PlayFragment;
+import xo.chillout.nullplay.player.PlaylistFragement;
 
 public class MainActivity extends AppCompatActivity {
 ActivityMainBinding mainBinding;
-AHBottomNavigationItem playlist , now_playing, about;
-AHBottomNavigation bottomNavigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main);
-        Toast.makeText(getApplicationContext(),"Fetch Successfull from remote",Toast.LENGTH_LONG).show();
-        sleep(1000);
-        Intent intent = new Intent(this, playlistActivity.class);
-        Intent intent1 = new Intent(this,playActivity.class);
-        startActivity(intent);
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new PlaylistFragement()).commit();
+        mainBinding.bottomNavigationAndroid.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment selected = null;
+                switch (item.getItemId()){
+                    case R.id.playlist:
+                        selected = new PlaylistFragement();
+                        break;
+                    case R.id.playing:
+                        selected = new PlayFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,selected).commit();
+                return true;
+            }
+        });
     }
 
 }
